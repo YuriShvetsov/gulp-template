@@ -1,0 +1,30 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+    
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    color: #262626;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding: 65px 0;
+    background: #fff;
+}
+
+@media screen and (max-width: 640px) {
+
+    .section {
+        padding: 30px 0;
+    }
+
+}

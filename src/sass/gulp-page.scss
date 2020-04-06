@@ -1,0 +1,125 @@
+/* Header page */
+
+.header {
+    padding: 35px 0;
+    background: #eb4a4b;
+    border-bottom: 2px solid darken(#eb4a4b, 12%);
+}
+    
+.header__title {
+    margin: 10px 0;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+
+.logo {
+    width: 100px;
+    height: 60px;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media screen and (max-width: 640px) {
+    
+    .header {
+        padding: 25px 0;
+    }
+
+    .header__title {
+        font-size: 32px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 45px;
+    }
+
+}
+
+/* Commands section */
+    
+.commands__table {
+    margin: 0 auto 20px;
+    border-collapse: collapse;
+    border-spacing: 15px;
+}
+    
+.commands__table-cell {
+    padding: 6px 10px;
+    font-size: 16px;
+    user-select: none;
+}
+
+.commands__table-cell_align_right {
+    text-align: right;
+}
+
+.commands__code {
+    display: inline-block;
+    padding: 6px 10px;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+    background-color: rgba(124, 124, 124, 0.1);
+    border-radius: 2px;
+    user-select: text;
+}
+
+.commands__code::before {
+    content: '$ ';
+}
+
+.commands__code_color_green {
+    color: #fff;
+    background-color: #68e25d;
+}
+
+@media screen and (max-width: 640px) {
+
+    .commands__table-cell {
+        padding: 6px 3px;
+        font-size: 14px;
+    }
+
+    .commands__code {
+        margin: 0 5px 5px;
+        padding: 3px 7px;
+    }
+
+}
+
+/* Footer */
+
+.footer {
+    padding: 26px 0;
+    background: linear-gradient(to top, #414041, #474647);
+    border-top: 2px solid #333333;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 640px) {
+
+    .footer {
+        padding: 20px 0;
+    }
+
+    .footer__title {
+        font-size: 14px;
+    }
+
+}
